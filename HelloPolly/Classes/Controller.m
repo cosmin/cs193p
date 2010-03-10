@@ -13,6 +13,8 @@
     numberOfSidesLabel.text = [[NSNumber numberWithInt:polygon.numberOfSides] stringValue];
     increaseButton.enabled = !(polygon.numberOfSides == polygon.maximumNumberOfSides);
     decreaseButton.enabled = !(polygon.numberOfSides == polygon.minimumNumberOfSides);
+    [polygonView setNumberOfSides:polygon.numberOfSides];
+    [polygonView setName:polygon.name];
 }
 
 - (IBAction)decrease:(id)sender {

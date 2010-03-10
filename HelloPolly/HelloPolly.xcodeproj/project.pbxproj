@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		17A889DA11483654002A67BC /* Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = 17A889D711483654002A67BC /* Controller.m */; };
 		17A889DB11483654002A67BC /* PolygonShape.m in Sources */ = {isa = PBXBuildFile; fileRef = 17A889D911483654002A67BC /* PolygonShape.m */; };
+		17A88A4911484F0D002A67BC /* PolygonDisplayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 17A88A4811484F0D002A67BC /* PolygonDisplayView.m */; };
 		1D3623260D0F684500981E51 /* HelloPollyAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* HelloPollyAppDelegate.m */; };
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
@@ -22,6 +23,8 @@
 		17A889D711483654002A67BC /* Controller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Controller.m; sourceTree = "<group>"; };
 		17A889D811483654002A67BC /* PolygonShape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PolygonShape.h; sourceTree = "<group>"; };
 		17A889D911483654002A67BC /* PolygonShape.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PolygonShape.m; sourceTree = "<group>"; };
+		17A88A4711484F0D002A67BC /* PolygonDisplayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PolygonDisplayView.h; sourceTree = "<group>"; };
+		17A88A4811484F0D002A67BC /* PolygonDisplayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PolygonDisplayView.m; sourceTree = "<group>"; };
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1D3623240D0F684500981E51 /* HelloPollyAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelloPollyAppDelegate.h; sourceTree = "<group>"; };
 		1D3623250D0F684500981E51 /* HelloPollyAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelloPollyAppDelegate.m; sourceTree = "<group>"; };
@@ -57,6 +60,8 @@
 				17A889D911483654002A67BC /* PolygonShape.m */,
 				1D3623240D0F684500981E51 /* HelloPollyAppDelegate.h */,
 				1D3623250D0F684500981E51 /* HelloPollyAppDelegate.m */,
+				17A88A4711484F0D002A67BC /* PolygonDisplayView.h */,
+				17A88A4811484F0D002A67BC /* PolygonDisplayView.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -166,6 +171,7 @@
 				1D3623260D0F684500981E51 /* HelloPollyAppDelegate.m in Sources */,
 				17A889DA11483654002A67BC /* Controller.m in Sources */,
 				17A889DB11483654002A67BC /* PolygonShape.m in Sources */,
+				17A88A4911484F0D002A67BC /* PolygonDisplayView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
