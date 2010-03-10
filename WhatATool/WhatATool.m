@@ -1,4 +1,5 @@
 #import <Foundation/Foundation.h>
+#import "PolygonShape.h"
 
 #define YES_NO(X) (X ? @"YES" : @"NO")
 
@@ -52,13 +53,41 @@ void PrintIntrospectionInfo() {
     }
 }
 
+void PrintPolygonInfo() {
+    NSMutableArray *polygons = [[NSMutableArray alloc] initWithCapacity:3];
+
+    PolygonShape *poly1 = [[PolygonShape alloc] initWithNumberOfSides:4 minimumNumberOfSides:3 maximumNumberOfSides:7];
+    NSLog(@"Created %@", poly1);
+    [polygons addObject:poly1];
+    [poly1 release];
+    poly1 = nil;
+    
+    PolygonShape *poly2 = [[PolygonShape alloc] initWithNumberOfSides:6 minimumNumberOfSides:5 maximumNumberOfSides:9];
+    NSLog(@"Created %@", poly2);
+    [polygons addObject:poly2];
+    [poly2 release];
+    poly2 = nil;
+    
+    PolygonShape *poly3 = [[PolygonShape alloc] initWithNumberOfSides:12 minimumNumberOfSides:9 maximumNumberOfSides:12];
+    NSLog(@"Created %@", poly3);
+    [polygons addObject:poly3];
+    [poly3 release];
+    poly3 = nil;
+    
+    for (PolygonShape *poly in polygons) {
+        NSLog(@"Contains: %@", poly);
+    }
+    [polygons release];
+}
+
 int main (int argc, const char * argv[]) {
     NSAutoreleasePool * pool = [[NSAutoreleasePool alloc] init];
 
-    PrintPathInfo();
-    PrintProcessInfo();
-    PrintBookmarkInfo();
-    PrintIntrospectionInfo();
+    PrintPathInfo();            // Section 1
+    PrintProcessInfo();         // Section 2
+    PrintBookmarkInfo();        // Section 3
+    PrintIntrospectionInfo();   // Section 4
+    PrintPolygonInfo();         // Section 6 (No function for section 5)
     
     [pool drain];
     return 0;
